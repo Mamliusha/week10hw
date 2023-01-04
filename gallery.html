@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://rare-gallery.com/thumbs/743545-Cats-Whiskers-Glance-Grass.jpg"
+      alt="cat"
+      width="30%"
+      id="cat"
+    />
+    <br />
+    <button id="previous" onclick="Previous()">Previous</button>
+    <button id="next" onclick="Next()">Next</button>
+
+    <script>
+      function Next() {
+        let cat = document.getElementById("cat");
+        cat.src =
+          "https://www.wallpaperflare.com/static/891/297/107/cat-muzzle-eyes-grey-wallpaper.jpg";
+      }
+      function Previous() {
+        let cat = document.getElementById("cat");
+        cat.src =
+          "https://rare-gallery.com/thumbs/743545-Cats-Whiskers-Glance-Grass.jpg";
+      }
+    </script>
+  </body>
+</html>
